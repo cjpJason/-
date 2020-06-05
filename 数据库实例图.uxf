@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>308</x>
+      <y>189</y>
+      <w>147</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>login
+--
+customer_id _
+login_name 
+password
+customer_stats
+modified_time
+is_staff（是否客服）
+status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>532</x>
+      <y>105</y>
+      <w>147</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>customer_inf（用户信息）
+--
+customer_id _
+customer_name
+indentity_card(证件类型，1.身份证2.军官证3.护照)
+indentity_number(证件号码)
+mobile_phone
+email
+gender(性别，1.男性 0.女性)
+register_time(注册时间)
+total_cost(累计消费)
+customer_level(会员级别，数字越大，级别越高)
+point(积分)
+payment_method(支付方式)
+payment_account(支付账号)
+is_merchant(是否商人)
+status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>448</x>
+      <y>119</y>
+      <w>98</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>574</x>
+      <y>357</y>
+      <w>147</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>customer_addr
+--
+customer_addr_id _
+customer_id
+province(省份)
+city(城市)
+address(具体到门牌号的地址)
+is_default(是否默认)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>448</x>
+      <y>203</y>
+      <w>140</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>147</x>
+      <y>770</y>
+      <w>161</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>product_category
+--
+category_id(分类id) _
+category_name(分类名称)
+parent_id(父分类id)
+category_level(分类层级，0，1，2)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>266</x>
+      <y>35</y>
+      <w>147</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>merchant_inf
+--
+customer_id  _
+bank_name
+bank_account
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1050</x>
+      <y>189</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>login</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1155</x>
+      <y>252</y>
+      <w>84</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>customer（顾客）</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1176</x>
+      <y>175</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>customer_inf</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1281</x>
+      <y>217</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>customer_address</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1302</x>
+      <y>294</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>supplier_inf</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1106</x>
+      <y>203</y>
+      <w>77</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>90.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1190</x>
+      <y>196</y>
+      <w>28</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;80.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1232</x>
+      <y>224</y>
+      <w>63</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;40.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1232</x>
+      <y>259</y>
+      <w>84</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;100.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>644</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>product(商品)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>973</x>
+      <y>616</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>product_inf</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1141</x>
+      <y>511</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>product_category</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1302</x>
+      <y>539</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>product_pic</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1232</x>
+      <y>728</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>product_comment</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1183</x>
+      <y>553</y>
+      <w>140</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;150.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1176</x>
+      <y>658</y>
+      <w>70</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;80.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1162</x>
+      <y>532</y>
+      <w>21</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1022</x>
+      <y>630</y>
+      <w>112</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>140.0;30.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>406</x>
+      <y>56</y>
+      <w>140</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>203</y>
+      <w>147</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>staff_inf(客服信息)
+--
+customer_id _</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>203</y>
+      <w>182</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1029</x>
+      <y>259</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>staff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1106</x>
+      <y>252</y>
+      <w>63</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>70.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>700</y>
+      <w>161</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>brand_inf
+--
+brand_id  _
+brand_name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>434</x>
+      <y>588</y>
+      <w>147</w>
+      <h>203</h>
+    </coordinates>
+    <panel_attributes>product_inf
+--
+product_id  _
+product_name
+brand_id(品牌id)
+category_id
+customer_id
+price
+publish_status(上架状态)
+weight
+length
+height
+width
+color
+production_date
+shelf_life
+description
+amout(库存)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>567</y>
+      <w>147</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>product_pic
+--
+product_pic_id  _
+product_id
+pic_desc
+pic_url
+pic_order</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>133</x>
+      <y>532</y>
+      <w>147</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>product_comment(商品评论)
+--
+comment_id  _
+product_id
+order_id
+customer_id
+title（标题）
+content(内容)
+audit_time(评论时间)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>301</x>
+      <y>651</y>
+      <w>147</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;210.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>210</y>
+      <w>49</w>
+      <h>357</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;490.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>560</y>
+      <w>175</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>230.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>574</x>
+      <y>581</y>
+      <w>154</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>637</y>
+      <w>154</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1043</x>
+      <y>728</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>brand</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1099</x>
+      <y>658</y>
+      <w>49</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>50.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>1036</y>
+      <w>147</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>order_master
+--
+order_sn (订单编号) _
+customer_id
+recipient_name(收货人姓名)
+province(省)
+city
+address（具体到门牌号的地址）
+payment_method
+order_money(订单金额)
+discount_money(优惠金额)
+shipping_money(运费金额)
+payment_money（支付金额）
+shipping_comp_name(快递公司名)
+shipping_sn(快递单号)
+create_time(下单时间)
+shipping_time(发货时间)
+pay_time(支付时间)
+order_point(订单积分)
+invoice_title(发票抬头)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>1078</y>
+      <w>147</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>order-product
+--
+order_id
+product_id
+discount_money</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>798</x>
+      <y>714</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>product_cart
+--
+cart_id _
+customer_id
+product_id
+product_amount
+add_time
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>574</x>
+      <y>609</y>
+      <w>238</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;320.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>735</x>
+      <y>812</y>
+      <w>147</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>favourites(收藏夹)
+--
+favourites_id  _
+customer_id
+product_id
+add_time
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>574</x>
+      <y>609</y>
+      <w>175</w>
+      <h>259</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>42</y>
+      <w>147</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>free-attribute(商家自主编写的属性)
+--
+attribute_id _
+customer_id
+attribute_title(属性标题)
+attribute_content（属性名称）</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>49</y>
+      <w>140</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+</diagram>
