@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>background.jpg</file>
+        <file>../../../adobe XD/用户首页.png</file>
+        <file>../../../adobe XD/注册商品.png</file>
+        <file>用户登录.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>用户登录.png</file>
+    </qresource>
+</RCC>
